@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		484B20E8274D348C0042BEAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B20E7274D348C0042BEAA /* AppDelegate.swift */; };
 		484B20EA274D348C0042BEAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B20E9274D348C0042BEAA /* SceneDelegate.swift */; };
-		484B20EC274D348C0042BEAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B20EB274D348C0042BEAA /* ViewController.swift */; };
 		484B20EF274D348C0042BEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484B20ED274D348C0042BEAA /* Main.storyboard */; };
 		484B20F1274D348E0042BEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484B20F0274D348E0042BEAA /* Assets.xcassets */; };
 		484B20F4274D348E0042BEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484B20F2274D348E0042BEAA /* LaunchScreen.storyboard */; };
+		484B2101274D351B0042BEAA /* GameTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B2100274D351B0042BEAA /* GameTVC.swift */; };
+		484B2109274D358B0042BEAA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B2108274D358B0042BEAA /* Game.swift */; };
+		484B210D274D3AF10042BEAA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 484B210C274D3AF10042BEAA /* Alamofire */; };
+		484B2111274D3B1D0042BEAA /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 484B2110274D3B1D0042BEAA /* AlamofireImage */; };
+		484B2115274D3B890042BEAA /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 484B2114274D3B890042BEAA /* ObjectMapper */; };
+		484B2119274D41A40042BEAA /* AlamofireObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 484B2118274D41A40042BEAA /* AlamofireObjectMapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		484B20E4274D348C0042BEAA /* GameCritics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameCritics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484B20E7274D348C0042BEAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484B20E9274D348C0042BEAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		484B20EB274D348C0042BEAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		484B20EE274D348C0042BEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		484B20F0274D348E0042BEAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484B20F3274D348E0042BEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484B20F5274D348E0042BEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484B2100274D351B0042BEAA /* GameTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTVC.swift; sourceTree = "<group>"; };
+		484B2108274D358B0042BEAA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484B2115274D3B890042BEAA /* ObjectMapper in Frameworks */,
+				484B2119274D41A40042BEAA /* AlamofireObjectMapper in Frameworks */,
+				484B210D274D3AF10042BEAA /* Alamofire in Frameworks */,
+				484B2111274D3B1D0042BEAA /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +68,9 @@
 			children = (
 				484B20E7274D348C0042BEAA /* AppDelegate.swift */,
 				484B20E9274D348C0042BEAA /* SceneDelegate.swift */,
-				484B20EB274D348C0042BEAA /* ViewController.swift */,
 				484B20ED274D348C0042BEAA /* Main.storyboard */,
+				484B2108274D358B0042BEAA /* Game.swift */,
+				484B2100274D351B0042BEAA /* GameTVC.swift */,
 				484B20F0274D348E0042BEAA /* Assets.xcassets */,
 				484B20F2274D348E0042BEAA /* LaunchScreen.storyboard */,
 				484B20F5274D348E0042BEAA /* Info.plist */,
@@ -83,6 +94,12 @@
 			dependencies = (
 			);
 			name = GameCritics;
+			packageProductDependencies = (
+				484B210C274D3AF10042BEAA /* Alamofire */,
+				484B2110274D3B1D0042BEAA /* AlamofireImage */,
+				484B2114274D3B890042BEAA /* ObjectMapper */,
+				484B2118274D41A40042BEAA /* AlamofireObjectMapper */,
+			);
 			productName = GameCritics;
 			productReference = 484B20E4274D348C0042BEAA /* GameCritics.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +127,12 @@
 				Base,
 			);
 			mainGroup = 484B20DB274D348C0042BEAA;
+			packageReferences = (
+				484B210B274D3AF10042BEAA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				484B210F274D3B1D0042BEAA /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				484B2113274D3B890042BEAA /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				484B2117274D41A40042BEAA /* XCRemoteSwiftPackageReference "AlamofireObjectMapper" */,
+			);
 			productRefGroup = 484B20E5274D348C0042BEAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484B20EC274D348C0042BEAA /* ViewController.swift in Sources */,
 				484B20E8274D348C0042BEAA /* AppDelegate.swift in Sources */,
 				484B20EA274D348C0042BEAA /* SceneDelegate.swift in Sources */,
+				484B2101274D351B0042BEAA /* GameTVC.swift in Sources */,
+				484B2109274D358B0042BEAA /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +363,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		484B210B274D3AF10042BEAA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+		484B210F274D3B1D0042BEAA /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		484B2113274D3B890042BEAA /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		484B2117274D41A40042BEAA /* XCRemoteSwiftPackageReference "AlamofireObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openium/AlamofireObjectMapper";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		484B210C274D3AF10042BEAA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 484B210B274D3AF10042BEAA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		484B2110274D3B1D0042BEAA /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 484B210F274D3B1D0042BEAA /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		484B2114274D3B890042BEAA /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 484B2113274D3B890042BEAA /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		484B2118274D41A40042BEAA /* AlamofireObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 484B2117274D41A40042BEAA /* XCRemoteSwiftPackageReference "AlamofireObjectMapper" */;
+			productName = AlamofireObjectMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 484B20DC274D348C0042BEAA /* Project object */;
 }
